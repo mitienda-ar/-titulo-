@@ -1,0 +1,562 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="es" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>(titulo) | Desarrollo Web para Pequeños Negocios</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            linen: {
+              50: "#FCFAF7",
+              100: "#F7F3ED",
+              200: "#EFE8DC",
+              300: "#E2D8C7"
+            },
+            sand: "#FAF7F2",
+            charcoal: {
+              900: "#1C1917",
+              800: "#292524",
+              700: "#44403C",
+              500: "#78716C",
+              400: "#A8A29E"
+            },
+            terracotta: {
+              50: "#FDF4EE",
+              100: "#FBE6D8",
+              600: "#C2410C",
+              700: "#9A3412",
+              800: "#7C2D12"
+            },
+            forest: {
+              50: "#F0FDF4",
+              100: "#DCFCE7",
+              600: "#16A34A",
+              700: "#15803D",
+              800: "#166534"
+            },
+            stoneborder: "#E7E5E4",
+            stonedark: "#D6D3D1"
+          },
+          fontFamily: {
+            sans: ["Plus Jakarta Sans", "system-ui", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+<style>
+    @layer base {
+      html {
+        font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+        background:
+          radial-gradient(circle at top, rgba(227, 196, 170, 0.15), transparent 28%),
+          linear-gradient(180deg, #FAF7F2 0%, #F7F3ED 100%);
+        color: #1C1917;
+      }
+
+      body {
+        background: transparent;
+      }
+    }
+  </style>
+</head>
+<body class="bg-sand text-charcoal-900 min-h-screen flex flex-col antialiased selection:bg-terracotta-100 selection:text-terracotta-800">
+<!-- HEADER EDITORIAL MINIMALISTA -->
+<header class="sticky top-0 w-full z-50 bg-[#FAF7F2]/90 backdrop-blur-md border-b border-stoneborder/80 transition-all shadow-[0_1px_0_rgba(28,25,23,0.03)]">
+<div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between gap-8">
+<!-- Brand Logo -->
+<a class="flex items-center gap-2.5 focus:outline-none group" href="#inicio">
+<div class="w-9 h-9 rounded-xl bg-charcoal-900 flex items-center justify-center text-white font-mono text-xs font-semibold tracking-tighter group-hover:bg-terracotta-700 transition-colors shadow-sm">
+<span class="">&lt;/&gt;</span>
+</div>
+<div class="flex flex-col leading-none">
+<span class="text-lg font-black tracking-tight text-charcoal-900">(titulo)</span>
+<span class="text-[10px] font-medium tracking-[0.22em] text-charcoal-500 uppercase">Estudio Digital</span>
+</div>
+</a>
+<!-- Navigation Links -->
+<nav class="hidden md:flex items-center gap-8 text-[13px] font-medium text-charcoal-700">
+<a class="hover:text-charcoal-900 transition-colors" href="#inicio">Inicio</a>
+<a class="hover:text-charcoal-900 transition-colors" href="#planes">Tipos de Web</a>
+<a class="hover:text-charcoal-900 transition-colors" href="#que-incluye">¿Qué incluye?</a>
+<a class="hover:text-charcoal-900 transition-colors" href="#dominio">Dominio</a>
+<a class="hover:text-charcoal-900 transition-colors" href="#mantenimiento">Mantenimiento</a>
+<a class="hover:text-charcoal-900 transition-colors" href="#para-quien">¿Para quién es?</a>
+</nav>
+<!-- Action Button -->
+<div class="flex items-center gap-3 shrink-0">
+<a class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-charcoal-900 hover:bg-terracotta-700 text-white font-medium text-xs tracking-tight transition-colors shadow-none" href="#contacto-final">
+<span class="">Solicitar presupuesto</span>
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+</a>
+</div>
+</div>
+</header>
+<main class="flex-1 w-full" id="inicio">
+<!-- 1. HERO SECTION (EDITORIAL & CÁLIDO) -->
+<section class="max-w-6xl mx-auto px-6 pt-16 md:pt-24 pb-20 md:pb-28">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
+<!-- Left Content -->
+<div class="lg:col-span-6 flex flex-col items-start text-left">
+<div class="inline-flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-terracotta-700 mb-6">
+<span class="w-1.5 h-1.5 rounded-full bg-terracotta-600"></span>
+<span class="">Desarrollo web para pequeños negocios</span>
+</div>
+<h1 class="text-4xl sm:text-5xl lg:text-[54px] font-extrabold text-charcoal-900 leading-[1.08] tracking-tight mb-6">
+            Tu negocio merece <span class="italic font-serif font-normal text-terracotta-700">una web</span> honesta y bien hecha.
+          </h1>
+<p class="text-base sm:text-lg text-charcoal-700 max-w-lg mb-8 leading-relaxed font-normal">
+            Creamos sitios web modernos, personalizados y adaptados a celulares, tablets y computadoras. Directo con nosotros, sin rodeos corporativos ni plantillas impersonales.
+          </p>
+<!-- CTAs -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto mb-12">
+<a class="min-h-[46px] px-6 py-2.5 rounded-lg bg-terracotta-700 hover:bg-terracotta-800 text-white font-semibold text-sm flex items-center justify-center gap-2 transition-all shadow-sm" href="#contacto-final">
+<span class="">Solicitar presupuesto</span>
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+</a>
+<a class="min-h-[46px] px-5 py-2.5 rounded-lg border border-stoneborder text-charcoal-700 hover:text-charcoal-900 hover:border-charcoal-400 bg-linen-50/50 font-medium text-sm flex items-center justify-center gap-2 transition-colors" href="#planes">
+<span class="">Ver opciones y formatos</span>
+</a>
+</div>
+<!-- Micro Trust Bar / Señales de confianza -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-6 border-t border-stoneborder w-full">
+<div>
+<p class="text-xs font-bold text-charcoal-900">Atención artesanal</p>
+<p class="text-[11px] text-charcoal-500 mt-0.5">Trato 1 a 1 de principio a fin</p>
+</div>
+<div>
+<p class="text-xs font-bold text-charcoal-900">100% Celulares</p>
+<p class="text-[11px] text-charcoal-500 mt-0.5">Fluido en cualquier pantalla</p>
+</div>
+<div>
+<p class="text-xs font-bold text-charcoal-900">Sin ataduras</p>
+<p class="text-[11px] text-charcoal-500 mt-0.5">El código y sitio son tuyos</p>
+</div>
+</div>
+</div>
+<!-- Right Visual Mockup (Marco cálido, no genérico de IA) -->
+<div class="lg:col-span-6">
+<div class="relative rounded-2xl border border-stoneborder bg-white shadow-sm overflow-hidden">
+<!-- Browser top minimal bar -->
+<div class="px-4 py-3 bg-linen-100/70 border-b border-stoneborder flex items-center justify-between text-xs">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-stonedark"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-stonedark"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-stonedark"></span>
+</div>
+<div class="font-mono text-[11px] text-charcoal-500 flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-forest-600"></span>
+<span class="">auramoda.github.io</span>
+</div>
+<span class="text-[10px] uppercase font-bold text-charcoal-400 tracking-wider">Demo en vivo</span>
+</div>
+<!-- Inner content preview -->
+<div class="p-6 bg-white">
+<!-- Site header -->
+<div class="flex items-center justify-between pb-4 border-b border-stoneborder/70 mb-5">
+<div>
+<div class="font-bold tracking-tight text-base text-charcoal-900">AURA</div>
+<span class="text-[10px] text-charcoal-500 tracking-widest uppercase font-medium">Moda &amp; Complementos</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-[11px] font-medium text-forest-800 bg-forest-50 px-2 py-0.5 rounded border border-forest-100 flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-forest-600"></span> Abierto
+                  </span>
+</div>
+</div>
+<!-- Item presentation -->
+<div class="grid grid-cols-1 sm:grid-cols-12 gap-4 items-center">
+<div class="sm:col-span-5 h-44 rounded-lg overflow-hidden relative bg-linen-100">
+<img class="w-full h-full object-cover" data-alt="Camisa lino palermo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBo7DRtIa_bmIY8uAk-8HCriX5ySXs1ivaMkbpmF_s3s3bW6BGm-s-4UnAZ9dfA1KbG4MyHU3zUxPJCFtIvh_Rkxmpx2RAxPK0wc23wkv6TXNtt-PS92fBTvjS79i-WrGv5i8qkBuDrauYHbZDC22UVAGI_bz1IE6lIOI9vuGfBkcDoysnQLmmX7ILfO5ImDW3avoPiO_n7_AjGZE48mJL9S1iOwJMOwUaSnPOaJtT0cXxTrC-jj-vQFg">
+<span class="absolute top-2 left-2 bg-charcoal-900/90 text-white text-[9px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded">Nuevo</span>
+</div>
+<div class="sm:col-span-7 flex flex-col justify-between h-full py-1">
+<div>
+<div class="flex items-baseline justify-between">
+<h4 class="font-bold text-charcoal-900 text-base">Camisa Lino Palermo</h4>
+<span class="font-bold text-terracotta-700 text-sm">$24.500</span>
+</div>
+<p class="text-xs text-charcoal-500 mt-1.5 leading-relaxed">
+                      100% algodón puro, confección artesanal en talleres locales. Corte holgado, fresco y duradero.
+                    </p>
+</div>
+<div class="mt-4 pt-3 border-t border-stoneborder/60 flex items-center justify-between">
+<span class="text-[11px] text-charcoal-500">Talles: S, M, L, XL</span>
+<button class="px-3 py-1.5 rounded bg-charcoal-900 text-white text-xs font-semibold hover:bg-terracotta-700 transition-colors flex items-center gap-1.5">
+<span class="">Pedir por WhatsApp</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Strip contact -->
+<div class="mt-4 pt-3 border-t border-stoneborder/60 flex items-center justify-between text-xs text-charcoal-700">
+<span class="flex items-center gap-1.5">
+<span class="text-forest-700 font-bold">●</span> ¿Dudas con el talle? Escribinos directo
+                </span>
+<span class="text-xs font-bold text-terracotta-700">1 Clic directo →</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. SECTION: DEMOSTRACIÓN VISUAL ONE-PAGE VS MULTI-PAGE (PRESERVADA Y REFINADA) -->
+<section class="py-20 md:py-24 border-y border-stoneborder bg-linen-100/40" id="planes">
+<div class="max-w-6xl mx-auto px-6">
+<div class="max-w-2xl mb-14">
+<div class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-charcoal-500 mb-3">
+<span class="w-1.5 h-1.5 rounded-full bg-charcoal-700"></span>
+<span class="">Comparativa Práctica</span>
+</div>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-charcoal-900 tracking-tight mb-4">
+            Dos formas de estructurar tu presencia digital
+          </h2>
+<p class="text-charcoal-700 text-base leading-relaxed">
+            Mirá exactamente cómo se siente navegar una página continua frente a un sitio completo con múltiples pestañas y direcciones independientes.
+          </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-stretch">
+<!-- 1. ONE-PAGE MINI WEB -->
+<div class="flex flex-col justify-between border-t-2 border-charcoal-900 pt-6">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="text-xs font-mono font-semibold uppercase tracking-wider text-forest-800">
+                  Tipo 01 / Navegación Continua
+                </span>
+<span class="text-xs font-mono text-charcoal-500">1 sola URL</span>
+</div>
+<h3 class="text-2xl font-bold text-charcoal-900 tracking-tight mb-2">
+                One-Page: Todo bajando con el dedo
+              </h3>
+<p class="text-sm text-charcoal-700 mb-6 leading-relaxed">
+                El visitante nunca sale ni espera recargas: toda la información fluye verticalmente de arriba a abajo. Pensá en un folleto o menú digital ágil.
+              </p>
+<!-- Realistic Mini Browser Window -->
+<div class="rounded-xl border border-stoneborder bg-white shadow-sm overflow-hidden mb-6">
+<!-- Browser Bar -->
+<div class="bg-linen-100/80 px-3.5 py-2.5 flex items-center justify-between border-b border-stoneborder">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-stonedark"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-stonedark"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-stonedark"></span>
+</div>
+<div class="bg-white px-3 py-1 rounded text-[11px] font-mono text-charcoal-700 border border-stoneborder flex items-center gap-1.5 truncate max-w-xs justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-forest-600"></span>
+<span class="">panaderiasanmartin.com.ar</span>
+<span class="text-terracotta-700 font-bold">#inicio</span>
+</div>
+<span class="text-[10px] font-bold text-charcoal-500 uppercase">1 sola pantalla</span>
+</div>
+<!-- Realistic Mini Website Viewport -->
+<div class="relative max-h-[380px] overflow-hidden bg-sand text-left">
+<!-- Scroll Track Indicator Overlay -->
+<div class="absolute right-2 top-3 bottom-3 w-6 bg-white/90 backdrop-blur-sm rounded border border-stoneborder z-20 flex flex-col items-center justify-between py-2 text-charcoal-700 pointer-events-none">
+<span class="text-[7px] font-bold uppercase rotate-90 whitespace-nowrap mt-3 tracking-tight">Scroll</span>
+<svg class="w-3 h-3 animate-bounce text-terracotta-700" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+</div>
+<!-- Mini Sticky WhatsApp -->
+<div class="absolute bottom-3 right-10 z-20 bg-forest-700 text-white px-2.5 py-1.5 rounded shadow-sm flex items-center gap-1.5 text-[10px] font-bold">
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+<span class="">WhatsApp</span>
+</div>
+<div class="p-3 pr-9 space-y-3">
+<!-- Mini Nav & Hero -->
+<div class="rounded border border-stoneborder bg-white overflow-hidden">
+<div class="px-3 py-1.5 bg-linen-100/50 border-b border-stoneborder flex items-center justify-between text-[10px]">
+<div class="flex items-center gap-1 font-bold text-charcoal-900">
+<span class="">🥖 San Martín</span>
+</div>
+<div class="flex items-center gap-2 font-medium text-charcoal-500 text-[9px]">
+<span class="text-terracotta-700 font-bold border-b border-terracotta-700">Inicio</span>
+<span class="">Especialidades</span>
+<span class="">Horarios</span>
+</div>
+</div>
+<div class="p-3 bg-linen-50 border-b border-stoneborder flex items-center gap-3">
+<div class="w-12 h-12 rounded bg-linen-200 overflow-hidden shrink-0">
+<img alt="Pan recién horneado" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4SZYlXP1ftp7kl3Col3pNhgxBhYPq4GwJKrCZkC81E5zLnuzukgUxEZ62ojdHr8hYp65CoKe8RcVEy5ssmdDPtb6vg74BYbpiRb6clHfkiNVTAONHpSECnSC1x_oBMCMGz7qteG0N8HuO5pvBBOMlwIqIoyFRLT1TCFcoOLlWimzI40egxlj9GtGIkPZBXYyR_Tfp0ts3VX3KqvHtenzDIgLvWcF87x9AVw54Kz-Eg0uCuya8MU5yTg">
+</div>
+<div class="flex-1 min-w-0">
+<span class="text-[8px] font-bold uppercase text-terracotta-700 tracking-wider">100% Masa Madre</span>
+<h4 class="text-[11px] font-bold text-charcoal-900 leading-tight">El mejor pan artesanal de tu barrio</h4>
+</div>
+</div>
+</div>
+<!-- Mini Catalog Grid -->
+<div class="rounded border border-stoneborder bg-white p-2.5">
+<div class="flex items-center justify-between mb-2">
+<span class="text-[10px] font-bold text-charcoal-900">Nuestras Especialidades</span>
+<span class="text-[8px] font-mono text-charcoal-500">#productos</span>
+</div>
+<div class="grid grid-cols-3 gap-2 text-center text-[9px]">
+<div class="p-1 rounded border border-stoneborder/60 bg-sand">
+<div class="w-full h-8 rounded bg-linen-200 overflow-hidden mb-1">
+<img alt="Medialunas" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdqREZ5-rA1lHXLE-nNxh0YBhG9U2_GWxucLCP8bp_AE8tAMbonhgm4UIrBG_G_BzPRYknvqOUE5l8_a45sJ983hw1jbbo36RgDWTydu3rHELIO7zwVXwedHDmYLfQUgxZUCVW-UARvKaGNk1mWM_1QfBV_-3cd0Gsv5qLXE3Py6egaf31hOxO3OhnsRPuagm5dzaP41Mmb058O9IJZI89EMG163FraElhudu13Ia1I-b-Bq3sw52ylQ">
+</div>
+<div class="font-semibold truncate">Medialunas</div>
+<span class="font-bold text-terracotta-700">$600</span>
+</div>
+<div class="p-1 rounded border border-stoneborder/60 bg-sand">
+<div class="w-full h-8 rounded bg-linen-200 overflow-hidden mb-1">
+<img alt="Chipá" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU3O-1dWgeqqMe_iqWRDRD0pAhuuhaR-KWg3Ps0p2H8O2mXnbDBgqR6-jR8LSIMyqb7iVivI3PQQf8wpl74-Xix6jmkkiH2CwggXyUy6mwWW6I7xYeIToWE6vteOZFYIivTgQsum9YiLbNQFCu-S7y2xf8iPLdS9bE6W2tViPY4NGW9TF_-IAzYB31znDHzXbWzu70SQ84tWlOoGuVrfl9DOpZNd9ba-uy9K6EsPfw6WSFBTorJk-5kw">
+</div>
+<div class="font-semibold truncate">Chipá x100g</div>
+<span class="font-bold text-terracotta-700">$800</span>
+</div>
+<div class="p-1 rounded border border-stoneborder/60 bg-sand">
+<div class="w-full h-8 rounded bg-linen-200 overflow-hidden mb-1">
+<img alt="Facturas" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEhlExvMeL2i3cuyi6tOhIW21Iu48lh-zh6qSQ7wKzAlx6ywyoyWFfOQQfAjb26ujtx9POkN-V116vOPuyO4w_waPPAXEUWgKMdDZ9rj8xPPVPnHxL24RDcgpOPgPadREyCeT4bPTmRCLoLJuhzHXq9HAqkPX3DgGCMmq0zuvbf7VX-ksZcaNzzqa-GhtRwG7cOVFHtmDRPhayrGty2laEdNW_yHSF4ZvIgC-KhiEblC_c_D_BbFlryQ">
+</div>
+<div class="font-semibold truncate">Facturas Doc.</div>
+<span class="font-bold text-terracotta-700">$5.500</span>
+</div>
+</div>
+</div>
+<!-- Mini Horarios -->
+<div class="rounded border border-stoneborder bg-white p-2.5 flex items-center justify-between text-[9px]">
+<div>
+<div class="font-semibold text-charcoal-900">📍 San Martín 450, Centro</div>
+<div class="text-charcoal-500 mt-0.5">Lun a Sáb 7:00 a 20:00 hs</div>
+</div>
+<span class="text-[8px] font-mono text-charcoal-500">#contacto</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Explicación limpia sin caja estridente -->
+<p class="text-xs text-charcoal-700 leading-relaxed border-l-2 border-forest-700 pl-3 mb-6">
+<strong>Flujo continuo sin saltos:</strong> Todo vive en una sola dirección web. El usuario lee de arriba a abajo y contacta directo. (Como la web actual.)
+              </p>
+</div>
+<!-- Datos clave editoriales -->
+<div class="border-t border-stoneborder pt-4 space-y-2 text-xs">
+<div class="flex gap-2">
+<span class="font-bold text-charcoal-900 w-24 shrink-0">Ideal para:</span>
+<span class="text-charcoal-700">Pocos productos o servicios específicos, cartas gastronómicas y lanzamientos rápidos.</span>
+</div>
+<div class="flex gap-2">
+<span class="font-bold text-charcoal-900 w-24 shrink-0">Ventaja:</span>
+<span class="text-charcoal-700">Carga inmediata, mantenimiento mínimo y botón directo a tu WhatsApp.</span>
+</div>
+</div>
+</div>
+<!-- 2. MULTI-PAGE MINI WEB -->
+<div class="flex flex-col justify-between border-t-2 border-terracotta-700 pt-6">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="text-xs font-mono font-semibold uppercase tracking-wider text-terracotta-700">
+                  Tipo 02 / Estructura por Secciones
+                </span>
+<span class="text-xs font-mono text-charcoal-500">Múltiples URLs</span>
+</div>
+<h3 class="text-2xl font-bold text-charcoal-900 tracking-tight mb-2">
+                Multi-Page: Páginas con dirección propia
+              </h3>
+<p class="text-sm text-charcoal-700 mb-6 leading-relaxed">
+                Cada categoría o sección es una pantalla independiente con su propia URL (/calzado, /locales, /quienes-somos). Para catálogos más amplios.
+              </p>
+<!-- Realistic Mini Browser Window -->
+<div class="rounded-xl border border-stoneborder bg-white shadow-sm overflow-hidden mb-6">
+<!-- Browser Bar -->
+<div class="bg-linen-100/80 px-3.5 py-2.5 flex items-center justify-between border-b border-stoneborder">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-stonedark"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-stonedark"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-stonedark"></span>
+</div>
+<div class="bg-white px-3 py-1 rounded text-[11px] font-mono text-charcoal-700 border border-stoneborder flex items-center gap-1.5 truncate max-w-xs justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-terracotta-700"></span>
+<span class="">tiendaurbana.com.ar</span>
+<span class="text-terracotta-700 font-bold">/calzado</span>
+</div>
+<span class="text-[10px] font-bold text-terracotta-700 uppercase">Ruta activa</span>
+</div>
+<!-- Realistic Website Viewport -->
+<div class="p-3 bg-sand text-left space-y-3">
+<!-- Interactive Menu -->
+<div class="bg-white p-2 rounded border border-stoneborder flex items-center justify-between text-[10px]">
+<div class="font-bold text-charcoal-900">
+<span class="">URBANA</span>
+</div>
+<div class="flex items-center gap-1 text-[9px]">
+<span class="px-1.5 py-0.5 text-charcoal-500">Inicio</span>
+<span class="px-2 py-0.5 rounded bg-charcoal-900 text-white font-semibold">Calzado</span>
+<span class="px-1.5 py-0.5 text-charcoal-700">Camperas</span>
+<span class="px-1.5 py-0.5 text-charcoal-700">Locales</span>
+</div>
+</div>
+<!-- Active Route: /calzado -->
+<div class="bg-white rounded border border-stoneborder p-2.5">
+<div class="flex items-center justify-between mb-2">
+<div class="text-[10px] font-bold text-charcoal-900">Colección Calzado (24 artículos)</div>
+<span class="text-[8px] font-mono text-charcoal-500">Pág. 1 de 3</span>
+</div>
+<div class="grid grid-cols-4 gap-2 text-center text-[8px]">
+<div class="p-1 rounded border border-stoneborder/60 bg-sand">
+<div class="w-full h-8 rounded bg-linen-200 overflow-hidden mb-1">
+<img alt="Sneaker Red" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAarG6qgDOQhHVBL7SgquPgDpbRI9Yh0A3qMmWhjfdQ5aF_DV5ut-bk35IN8Qw6ky25AjgBfL8eSagb80-HphqmJMTb3D0cssq0p4jnQ7cOMCdxfLuY_tcSVHEEvB7pdIMGw8ClOWNKvsavH8LvUhjo1Cqpdqs7ziBV0HwYVf9PAX_wDU27T13-CN3wf1xk_2ezTYydjpMk4OmqbFDijDgQNqWKIwOJ4eh3I0KkE-UloiFq7Tjk02K3g">
+</div>
+<div class="font-semibold truncate">Red Walk</div>
+<span class="font-bold text-charcoal-900">$38.900</span>
+</div>
+<div class="p-1 rounded border border-stoneborder/60 bg-sand">
+<div class="w-full h-8 rounded bg-linen-200 overflow-hidden mb-1">
+<img alt="Air White" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGhohhK9nM_4qyVHfOQA-mbk6omdrTsVel4Qmt_wuWFlQ1BvHMVGKFUz17ToIaKWj_7LWy7qcmPfYpZGopWmhrVrA5kF9rDJjOm_yfmTv5ktBFkcOvYro6XnS9lBrxI94ZHXkgBuRlWF0Q3oPRByM4rYzWBCoKAy0dx1LPVJ_KT5PVpepNQnZCSrhHw0z1GtiFpZgMD3fksoupXGktb-FjXCAEtZn3nN6NcQjWF98mgS-f4x0e2jQetw">
+</div>
+<div class="font-semibold truncate">Air White</div>
+<span class="font-bold text-charcoal-900">$44.500</span>
+</div>
+<div class="p-1 rounded border border-stoneborder/60 bg-sand">
+<div class="w-full h-8 rounded bg-linen-200 overflow-hidden mb-1">
+<img alt="Canvas Skate" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5eKeKr2qayWBnnaDuhlMPxVFmrNsaxa-TO5w3POL_FA1Z4x7HQPBeSWJVHWgSOoAMnaLLvtXvZp4CGV89-UWOx-IFz708Fwo9Zoxo9sAPPrvPJs-9qS_nMRWeJbDyD5KIXiMdC3pSwfStJ0Xudrv84B5qq22V2XOgludGpfsH0SjAhRtc8UFpMtW3avWu9OCXkfWV7WjZcJ_T20vU8Ff-7ohkq4VVE8xSpbS5UXuuzBBYVId5Ohkogw">
+</div>
+<div class="font-semibold truncate">Canvas Low</div>
+<span class="font-bold text-charcoal-900">$29.000</span>
+</div>
+<div class="p-1 rounded border border-stoneborder/60 bg-sand">
+<div class="w-full h-8 rounded bg-linen-200 overflow-hidden mb-1">
+<img alt="Borcegos Cuero" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6Xntdxxj3su1JgKeZEGpg2S2V50PbN3BcPMi0BDa0aj17xFZeVaKNJLmuiI4yH51cfp26uL0X0BYZmqsc1SZJSe1okUxqHl0Xx6xwmkNH-5A3-CPWWwvWRFGF5p8rVxZj5e5P4YaSfSdWAd0MVpZM8qVehNLS6pg3e3iBaPXxLG1BB-TzD-88IY7srBcAV-B71t1f3j1cU3NQLh3FLfCr799hJYLeRoSck8pw1mitfQSLu57Q-uUKyQ">
+</div>
+<div class="font-semibold truncate">Borcego</div>
+<span class="font-bold text-charcoal-900">$52.000</span>
+</div>
+</div>
+</div>
+<!-- Other routes preview -->
+<div class="grid grid-cols-2 gap-2 text-[9px]">
+<div class="bg-white p-2 rounded border border-stoneborder flex items-center justify-between">
+<div>
+<span class="font-bold text-charcoal-900 block leading-tight">/locales</span>
+<span class="text-[8px] text-charcoal-500">3 sucursales</span>
+</div>
+<span class="text-[8px] font-mono text-terracotta-700">Ver →</span>
+</div>
+<div class="bg-white p-2 rounded border border-stoneborder flex items-center justify-between">
+<div>
+<span class="font-bold text-charcoal-900 block leading-tight">/quienes-somos</span>
+<span class="text-[8px] text-charcoal-500">El taller</span>
+</div>
+<span class="text-[8px] font-mono text-terracotta-700">Ver →</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Explicación limpia -->
+<p class="text-xs text-charcoal-700 leading-relaxed border-l-2 border-terracotta-700 pl-3 mb-6">
+<strong>Estructura modular con páginas separadas:</strong> Cada sección tiene su propio enlace directo para compartir por WhatsApp o redes.
+              </p>
+</div>
+<!-- Datos clave editoriales -->
+<div class="border-t border-stoneborder pt-4 space-y-2 text-xs">
+<div class="flex gap-2">
+<span class="font-bold text-charcoal-900 w-24 shrink-0">Ideal para:</span>
+<span class="text-charcoal-700">Catálogos medianos/grandes, marcas con historia, varias sedes o sucursales físicas.</span>
+</div>
+<div class="flex gap-2">
+<span class="font-bold text-charcoal-900 w-24 shrink-0">Ventaja:</span>
+<span class="text-charcoal-700">Máxima claridad, mejor indexación en Google por producto y organización profunda.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. SECTION: ¿QUÉ INCLUYE? (DIAGRAMACIÓN EDITORIAL ABIERTA, SIN CAJAS GENÉRICAS) -->
+<section class="py-20 md:py-28 max-w-6xl mx-auto px-6" id="que-incluye">
+<div class="max-w-2xl mb-16">
+<div class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-charcoal-500 mb-3">
+<span class="w-1.5 h-1.5 rounded-full bg-forest-700"></span>
+<span class="">Transparencia desde el día uno</span>
+</div>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-charcoal-900 tracking-tight mb-4">
+          ¿Qué incluye tu sitio web?
+        </h2>
+<p class="text-charcoal-700 text-base leading-relaxed">
+          Todo lo fundamental para que tu negocio tenga presencia en línea sólida y funcional, sin costes sorpresa ni mensualidades ocultas.
+        </p>
+</div>
+<!-- Editorial 2-column open list with clean dividers -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"><div class="p-6 rounded-xl bg-white border border-stoneborder shadow-sm flex flex-col justify-between hover:border-charcoal-400 transition-colors"><div class="flex items-center justify-between mb-4"><span class="font-mono text-xs font-bold text-terracotta-700 bg-linen-100 px-2.5 py-1 rounded">01</span><span class="text-[11px] font-medium text-charcoal-500 uppercase tracking-wider">Identidad</span></div><h3 class="text-base font-bold text-charcoal-900 mb-2">Diseño personalizado</h3><p class="text-sm text-charcoal-700 leading-relaxed font-normal">Colores, tipografía y estilo adaptados fielmente a la identidad y personalidad de tu marca. Nada de plantillas prefabricadas genéricas.</p></div><div class="p-6 rounded-xl bg-white border border-stoneborder shadow-sm flex flex-col justify-between hover:border-charcoal-400 transition-colors"><div class="flex items-center justify-between mb-4"><span class="font-mono text-xs font-bold text-terracotta-700 bg-linen-100 px-2.5 py-1 rounded">02</span><span class="text-[11px] font-medium text-charcoal-500 uppercase tracking-wider">Móviles</span></div><h3 class="text-base font-bold text-charcoal-900 mb-2">Diseño responsive para celulares</h3><p class="text-sm text-charcoal-700 leading-relaxed font-normal">Diseñado primero para celulares y probado en pantallas de todos los tamaños. El 90% de tus clientes entrará desde su teléfono.</p></div><div class="p-6 rounded-xl bg-white border border-stoneborder shadow-sm flex flex-col justify-between hover:border-charcoal-400 transition-colors"><div class="flex items-center justify-between mb-4"><span class="font-mono text-xs font-bold text-terracotta-700 bg-linen-100 px-2.5 py-1 rounded">03</span><span class="text-[11px] font-medium text-charcoal-500 uppercase tracking-wider">Puesta a punto</span></div><h3 class="text-base font-bold text-charcoal-900 mb-2">Publicación online completa</h3><p class="text-sm text-charcoal-700 leading-relaxed font-normal">Nos encargamos de toda la configuración técnica y puesta en marcha para que el enlace esté disponible públicamente y listo para compartir.</p></div><div class="p-6 rounded-xl bg-white border border-stoneborder shadow-sm flex flex-col justify-between hover:border-charcoal-400 transition-colors"><div class="flex items-center justify-between mb-4"><span class="font-mono text-xs font-bold text-forest-800 bg-forest-50 px-2.5 py-1 rounded border border-forest-100">04</span><span class="text-[11px] font-medium text-forest-800 uppercase tracking-wider">Conversión</span></div><h3 class="text-base font-bold text-charcoal-900 mb-2">Botón de WhatsApp directo</h3><p class="text-sm text-charcoal-700 leading-relaxed font-normal">Enlaces directos y preconfigurados para que tus potenciales clientes inicien una conversación con un solo toque, sin formularios tediosos.</p></div><div class="p-6 rounded-xl bg-white border border-stoneborder shadow-sm flex flex-col justify-between hover:border-charcoal-400 transition-colors"><div class="flex items-center justify-between mb-4"><span class="font-mono text-xs font-bold text-terracotta-700 bg-linen-100 px-2.5 py-1 rounded">05</span><span class="text-[11px] font-medium text-charcoal-500 uppercase tracking-wider">Buscadores</span></div><h3 class="text-base font-bold text-charcoal-900 mb-2">Configuración básica de SEO</h3><p class="text-sm text-charcoal-700 leading-relaxed font-normal">Estructura de metadatos optimizada para Google, facilitando que vecinos y personas que buscan tus servicios en tu zona te encuentren con facilidad.</p></div><div class="p-6 rounded-xl bg-white border border-stoneborder shadow-sm flex flex-col justify-between hover:border-charcoal-400 transition-colors"><div class="flex items-center justify-between mb-4"><span class="font-mono text-xs font-bold text-forest-800 bg-forest-50 px-2.5 py-1 rounded border border-forest-100">06</span><span class="text-[11px] font-medium text-forest-800 uppercase tracking-wider">Alojamiento</span></div><h3 class="text-base font-bold text-charcoal-900 mb-2">Alojamiento gratuito de por vida</h3><p class="text-sm text-charcoal-700 leading-relaxed font-normal">Publicamos tu sitio en GitHub Pages: una infraestructura global ultrarrápida, segura y 100% libre de costos de servidor mensuales.</p></div></div>
+</section>
+<!-- 4. SECTION: TU DOMINIO (TRANSPARENCIA EDITORIAL EN 2 COLUMNAS) -->
+<section class="py-20 md:py-24 border-y border-stoneborder bg-linen-100/30" id="dominio">
+<div class="max-w-6xl mx-auto px-6">
+<div class="max-w-2xl mb-14">
+<div class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-charcoal-500 mb-3">
+<span class="w-1.5 h-1.5 rounded-full bg-terracotta-700"></span>
+<span class="">Claridad Total</span>
+</div>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-charcoal-900 tracking-tight mb-4">
+            ¿Qué pasa con el dominio y la dirección?
+          </h2>
+<p class="text-charcoal-700 text-base leading-relaxed">
+            Te explicamos con honestidad las dos opciones reales para nombrar tu sitio web:
+          </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl"><div class="rounded-2xl border border-stoneborder bg-white p-6 sm:p-8 shadow-sm flex flex-col justify-between relative overflow-hidden"><div class="absolute top-0 left-0 right-0 h-1 bg-forest-700"></div><div><div class="flex items-center justify-between mb-4"><span class="text-xs font-mono uppercase tracking-wider font-semibold text-forest-800 bg-forest-50 px-2.5 py-1 rounded border border-forest-100">Opción Base Gratuita</span><span class="text-xs font-semibold text-forest-800">Sin costos extra</span></div><div class="font-mono text-sm text-charcoal-900 font-bold bg-linen-100/70 border border-stoneborder px-3.5 py-2 rounded-lg mb-4 inline-flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-forest-600"></span><span class="">mitienda-ar.github.io/nombre</span></div><p class="text-sm text-charcoal-700 leading-relaxed mb-4">Tu página se aloja y publica en la nube sin costo adicional. Se accede directamente mediante un enlace seguro y veloz.</p><p class="text-xs text-charcoal-500 leading-relaxed">Ideal para validar tu idea de negocio, arrancar de inmediato o evitar trámites anuales, vencimientos bancarios y gestiones complejas.</p></div><div class="mt-8 pt-4 border-t border-stoneborder/70 flex items-center gap-2 text-xs text-forest-800 font-medium"><svg class="w-4 h-4 shrink-0 text-forest-700" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg><span class="">Sin cuotas mensuales ni sorpresas de mantenimiento técnico.</span></div></div><div class="rounded-2xl border border-stoneborder bg-white p-6 sm:p-8 shadow-sm flex flex-col justify-between relative overflow-hidden"><div class="absolute top-0 left-0 right-0 h-1 bg-terracotta-700"></div><div><div class="flex items-center justify-between mb-4"><span class="text-xs font-mono uppercase tracking-wider font-semibold text-terracotta-700 bg-linen-100 px-2.5 py-1 rounded">Opción con Dominio Propio</span><span class="text-xs font-medium text-charcoal-500">Personalizado</span></div><div class="font-mono text-sm text-charcoal-900 font-bold bg-linen-100/70 border border-stoneborder px-3.5 py-2 rounded-lg mb-4 inline-flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-terracotta-700"></span><span class="">mitienda.com.ar</span></div><p class="text-sm text-charcoal-700 leading-relaxed mb-4">Si preferís una dirección propia con tu marca exclusiva, el registro es gestionado directamente por vos ante el organismo oficial (NIC Argentina).</p><p class="text-xs text-charcoal-500 leading-relaxed">El arancel oficial del registro no está incluido en el desarrollo, pero una vez adquirido, <strong>te guiamos paso a paso para vincularlo a tu web sin costo extra</strong>.</p></div><div class="mt-8 pt-4 border-t border-stoneborder/70 flex items-center gap-2 text-xs text-charcoal-700"><span class="text-terracotta-700 font-bold">●</span><span class="">Podés arrancar gratis hoy y sumar tu dominio propio cuando tu negocio lo pida.</span></div></div></div>
+</div>
+</section>
+<!-- 5. SECTION: MANTENIMIENTO (INTEGRACIÓN EDITORIAL NATURAL) -->
+<section class="py-20 md:py-24 max-w-6xl mx-auto px-6" id="mantenimiento">
+<div class="rounded-2xl border border-stoneborder bg-white p-8 sm:p-12 shadow-sm flex flex-col lg:flex-row items-start lg:items-center justify-between gap-10 relative overflow-hidden"><div class="max-w-2xl"><div><div class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-forest-800 bg-forest-50 px-2.5 py-1 rounded border border-forest-100 mb-4"><span class="w-1.5 h-1.5 rounded-full bg-forest-600"></span><span class="">Acompañamiento continuo</span></div><h2 class="text-2xl sm:text-3xl font-extrabold text-charcoal-900 tracking-tight mb-3">¿Necesitás cambios después de publicar tu web?</h2><p class="text-charcoal-700 text-sm sm:text-base leading-relaxed mb-4">No te dejamos solo una vez entregado el proyecto. Ofrecemos mantenimiento puntual o periódico para que tu sitio se mantenga siempre actualizado al ritmo de tu negocio.</p><div class="bg-linen-50/50 border border-stoneborder/70 rounded-xl p-3.5 flex items-start gap-2.5 text-xs text-charcoal-500 leading-relaxed"><span class="text-terracotta-700 font-bold text-sm leading-none mt-0.5">●</span><span class="">Nuevos productos, actualización de precios, cambios de horarios, fotos de temporada o datos de contacto: nos escribís y lo resolvemos en el día.</span></div></div></div><div class="shrink-0 w-full sm:w-auto"><a class="w-full sm:w-auto min-h-[48px] px-6 py-3 rounded-lg border border-charcoal-900 text-charcoal-900 hover:bg-charcoal-900 hover:text-white font-semibold text-xs tracking-tight flex items-center justify-center gap-2 transition-all shadow-none" href="#contacto-final"><span class="">Consultar sobre mantenimiento</span><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></a></div></div>
+</section>
+<!-- 6. SECTION: ¿PARA QUIÉN ES? (FORMATO EDITORIAL POR RUBRO) -->
+<section class="py-20 md:py-24 max-w-6xl mx-auto px-6" id="para-quien">
+<div class="max-w-2xl mb-14">
+<div class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-charcoal-500 mb-3">
+<span class="w-1.5 h-1.5 rounded-full bg-terracotta-700"></span>
+<span class="">Sectores y Rubros</span>
+</div>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-charcoal-900 tracking-tight mb-4">
+          Pensado para impulsar a quienes emprenden
+        </h2>
+<p class="text-charcoal-700 text-base leading-relaxed">
+          Desde un proyecto independiente que recién arranca hasta un comercio tradicional que necesita orden y presencia en Google y redes.
+        </p>
+</div>
+<!-- Grilla editorial abierta -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"><div class="p-6 rounded-xl bg-white border border-stoneborder shadow-sm flex flex-col justify-between hover:border-charcoal-400 transition-colors"><div class="w-8 h-8 rounded-lg bg-linen-100 flex items-center justify-center text-terracotta-700 font-bold text-xs mb-4">01</div><div><h3 class="font-bold text-charcoal-900 text-base mb-2">Tiendas de ropa y moda</h3><p class="text-sm text-charcoal-700 leading-relaxed font-normal">Lookbooks de temporada, tabla de medidas y enlace directo a WhatsApp para responder dudas sobre talles y concretar ventas.</p></div></div><div class="p-6 rounded-xl bg-white border border-stoneborder shadow-sm flex flex-col justify-between hover:border-charcoal-400 transition-colors"><div class="w-8 h-8 rounded-lg bg-linen-100 flex items-center justify-center text-terracotta-700 font-bold text-xs mb-4">02</div><div><h3 class="font-bold text-charcoal-900 text-base mb-2">Emprendimientos y artesanos</h3><p class="text-sm text-charcoal-700 leading-relaxed font-normal">Catálogo de creaciones únicas, detalle del proceso de confección y opciones claras de punto de retiro o envíos a todo el país.</p></div></div><div class="p-6 rounded-xl bg-white border border-stoneborder shadow-sm flex flex-col justify-between hover:border-charcoal-400 transition-colors"><div class="w-8 h-8 rounded-lg bg-linen-100 flex items-center justify-center text-terracotta-700 font-bold text-xs mb-4">03</div><div><h3 class="font-bold text-charcoal-900 text-base mb-2">Profesionales independientes</h3><p class="text-sm text-charcoal-700 leading-relaxed font-normal">Nutricionistas, contadores, kinesiólogos o psicólogos: servicios detallados, modalidad de atención y contacto directo sin intermediarios.</p></div></div><div class="p-6 rounded-xl bg-white border border-stoneborder shadow-sm flex flex-col justify-between hover:border-charcoal-400 transition-colors"><div class="w-8 h-8 rounded-lg bg-linen-100 flex items-center justify-center text-forest-800 font-bold text-xs mb-4">04</div><div><h3 class="font-bold text-charcoal-900 text-base mb-2">Comercios de cercanía y almacenes</h3><p class="text-sm text-charcoal-700 leading-relaxed font-normal">Ubicación exacta en mapa, horarios de atención actualizados y catálogo rápido para que los vecinos de tu barrio te encuentren.</p></div></div><div class="p-6 rounded-xl bg-white border border-stoneborder shadow-sm flex flex-col justify-between hover:border-charcoal-400 transition-colors"><div class="w-8 h-8 rounded-lg bg-linen-100 flex items-center justify-center text-terracotta-700 font-bold text-xs mb-4">05</div><div><h3 class="font-bold text-charcoal-900 text-base mb-2">Proyectos creativos</h3><p class="text-sm text-charcoal-700 leading-relaxed font-normal">Fotografía, cerámica, tatuajes y diseño: portafolios visuales limpios y rápidos que ponen tu obra y tus trabajos en primer plano.</p></div></div><div class="p-6 rounded-xl bg-white border border-stoneborder shadow-sm flex flex-col justify-between hover:border-charcoal-400 transition-colors"><div class="w-8 h-8 rounded-lg bg-linen-100 flex items-center justify-center text-charcoal-900 font-bold text-xs mb-4">06</div><div><h3 class="font-bold text-charcoal-900 text-base mb-2">Negocios familiares</h3><p class="text-sm text-charcoal-700 leading-relaxed font-normal">Ferreterías, panaderías, talleres o imprentas que quieren formalizar su presencia digital y transmitir confianza y seriedad.</p></div></div></div>
+</section>
+<!-- 7. SECTION FINAL / CONTACTO HUMANO -->
+<section class="py-20 md:py-28 max-w-6xl mx-auto px-6" id="contacto-final">
+<div class="border border-stoneborder rounded-2xl bg-white p-8 sm:p-12 md:p-16 text-center flex flex-col items-center shadow-sm relative overflow-hidden"><div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-linen-100/80 border border-stoneborder text-xs text-charcoal-700 font-medium mb-6"><span class="w-2 h-2 rounded-full bg-forest-600"></span><span class="">Dos estudiantes apasionados • Trato 1 a 1 directo</span></div><h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-charcoal-900 tracking-tight mb-4 max-w-xl">¿Listo para llevar tu negocio a la web?</h2><p class="text-base sm:text-lg text-charcoal-700 max-w-lg mb-8 leading-relaxed">Contanos qué necesitás y te armamos una propuesta simple, clara y sin compromiso.</p><div class="flex flex-col sm:flex-row items-center gap-3 w-full max-w-sm mb-6"><a class="w-full min-h-[48px] px-6 py-3 rounded-lg bg-terracotta-700 hover:bg-terracotta-800 text-white font-semibold text-sm flex items-center justify-center gap-2.5 transition-colors shadow-sm" href="https://wa.me/?text=Hola%20(titulo)!%20Quisiera%20solicitar%20un%20presupuesto%20para%20la%20web%20de%20mi%20negocio." rel="noopener noreferrer" target="_blank"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg><span class="">Pedir presupuesto por WhatsApp</span></a></div><p class="text-xs text-charcoal-500 max-w-md">Respondemos rápido y con total transparencia. Sin contratos complejos ni sorpresas.</p></div>
+</section>
+</main>
+<!-- FOOTER CÁLIDO Y SOBRIO -->
+<footer class="w-full border-t border-stoneborder bg-[#FAF7F2] py-12">
+<div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8 text-xs">
+<!-- Brand & Info -->
+<div class="flex flex-col items-center md:items-start text-center md:text-left gap-1.5">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded bg-charcoal-900 text-white flex items-center justify-center font-mono text-[10px] font-bold">
+<span class="">&lt;/&gt;</span>
+</div>
+<span class="font-bold text-sm text-charcoal-900 tracking-tight">(titulo)</span>
+</div>
+<p class="text-charcoal-500 max-w-sm">
+          Hecho con dedicación por dos estudiantes 
+     </p>
+</div>
+<!-- Links -->
+<div class="flex flex-wrap items-center justify-center gap-6 font-medium text-charcoal-700">
+<a class="hover:text-charcoal-900 transition-colors" href="#planes">Tipos de Web</a>
+<a class="hover:text-charcoal-900 transition-colors" href="#que-incluye">Inclusiones</a>
+<a class="hover:text-charcoal-900 transition-colors" href="#dominio">Dominio</a>
+<a class="hover:text-charcoal-900 transition-colors" href="#mantenimiento">Mantenimiento</a>
+<a class="hover:text-charcoal-900 transition-colors" href="#contacto-final">Contacto</a>
+</div>
+<!-- Legal -->
+<div class="text-charcoal-500 text-[11px] text-center md:text-right">
+<p class="">© 2026 (titulo). Presencia digital con propósito.</p>
+</div>
+</div>
+</footer>
+
+
+</body></html>
